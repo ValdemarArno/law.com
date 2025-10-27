@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valdem'ar Arno | International Lawyer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="main-page">
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <canvas id="particlesCanvas"></canvas>
+    </div>
+
+    <!-- Cursor Trail -->
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo" data-key="logo">
+                    V<span>A</span>
+                </div>
+            </div>
+                <li class="language-switcher">
+                    <div class="lang-select-wrapper">
+                        <select id="languageSwitch" class="lang-select">
+                            <option value="en">🇺🇸 EN</option>
+                            <option value="ru">🇷🇺 RU</option>
+                            <option value="ua">🇺🇦 UA</option>
+                            <option value="ga">🇮🇪 GA</option>
+                        </select>
+                        <div class="select-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="nav-hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#about" data-key="nav_about">About</a>
+            <a href="#expertise" data-key="nav_expertise">Expertise</a>
+            <a href="#experience" data-key="nav_experience">Experience</a>
+            <a href="#contact" data-key="nav_contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-glow"></div>
+            <div class="hero-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <div class="badge-dot"></div>
+                        <span data-key="hero_badge">International Legal Expert</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line" data-key="hero_name">Valdem'ar</span>
+                        <span class="title-line accent" data-key="hero_surname">Arno</span>
+                    </h1>
+                    
+                    <div class="hero-subtitle">
+                        <span class="subtitle-text" data-key="hero_subtitle">Cross-Border Legal Solutions</span>
+                        <div class="subtitle-underline"></div>
+                    </div>
+                    
+                    <p class="hero-description" data-key="hero_description">
+                        Specializing in Irish, EU, and International Law with proven expertise in complex cross-border legal matters, corporate governance, and international negotiations.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="75">0</div>
+                            <div class="stat-label" data-key="stat_clients">Clients Served</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="25">0</div>
+                            <div class="stat-label" data-key="stat_age">Years Old</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="150">0</div>
+                            <div class="stat-label" data-key="stat_cases">Cases Handled</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" data-key="hero_contact">
+                            <span>Schedule Consultation</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary" data-key="hero_about">
+                            <span>Explore Profile</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-glow"></div>
+                                <div class="profile-image">
+                                    <div class="image-shine"></div>
+                                    <div class="profile-initials">VA</div>
+                                    <div class="profile-overlay">
+                                        <i class="fas fa-balance-scale"></i>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 data-key="hero_name">Valdem'ar Arno</h3>
+                                    <p data-key="card_title">International Lawyer</p>
+                                    <div class="card-contacts">
+                                        <div class="contact-item">
+                                            <i class="fas fa-phone"></i>
+                                            <span>+44 73 5055 3612</span>
+                                        </div>
+                                        <div class="contact-item">
+                                            <i class="fab fa-telegram"></i>
+                                            <span>@arnofrance</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span data-key="scroll_text">Scroll to Explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="about_title">Professional Profile</h2>
+                <div class="section-subtitle" data-key="about_subtitle">25 Years | International Legal Expert</div>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-key="about_name">Valdem'ar Arno</h3>
+                    
+                    <p data-key="about_text1">
+                        As a dynamic international lawyer at 25, I bring fresh perspective combined with deep expertise in Irish and European Union law. My practice focuses on delivering innovative legal solutions for clients navigating complex cross-border challenges.
+                    </p>
+                    
+                    <p data-key="about_text2">
+                        Fluent in multiple languages and well-versed in various legal systems, I provide comprehensive counsel that bridges cultural and jurisdictional gaps, ensuring seamless legal representation across international boundaries.
+                    </p>
+                    
+                    <div class="qualifications">
+                        <div class="qualification-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4 data-key="qualification1_title">Legal Education</h4>
+                                <p data-key="qualification1_text">Trinity College Dublin, International Law</p>
+                            </div>
+                        </div>
+                        
+                        <div class="qualification-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4 data-key="qualification2_title">Certifications</h4>
+                                <p data-key="qualification2_text">EU Law Specialist | International Arbitration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-skills">
+                    <div class="skill-category">
+                        <h4 data-key="skills_international">International Law</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95">
+                                <span class="skill-percent">95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4 data-key="skills_eu">EU Legislation</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90">
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4 data-key="skills_corporate">Corporate Law</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88">
+                                <span class="skill-percent">88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4 data-key="skills_negotiation">International Negotiation</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92">
+                                <span class="skill-percent">92%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise section-padding" id="expertise">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="expertise_title">Legal Expertise</h2>
+                <div class="section-subtitle" data-key="expertise_subtitle">Specialized Practice Areas</div>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-globe-europe"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 data-key="expertise1_title">International Business Law</h3>
+                    <p data-key="expertise1_desc">Cross-border transactions, international contracts, and global business expansion strategies.</p>
+                    <div class="expertise-features">
+                        <span data-key="feature1">Cross-Border M&A</span>
+                        <span data-key="feature2">International Contracts</span>
+                        <span data-key="feature3">Global Compliance</span>
+                    </div>
+                </div>
+                
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 data-key="expertise2_title">Corporate Governance</h3>
+                    <p data-key="expertise2_desc">Company formation, corporate structuring, and regulatory compliance in Ireland and EU.</p>
+                    <div class="expertise-features">
+                        <span data-key="feature4">Company Formation</span>
+                        <span data-key="feature5">Corporate Compliance</span>
+                        <span data-key="feature6">Board Advisory</span>
+                    </div>
+                </div>
+                
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-passport"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 data-key="expertise3_title">Immigration Law</h3>
+                    <p data-key="expertise3_desc">Work permits, business immigration, and compliance for international professionals and companies.</p>
+                    <div class="expertise-features">
+                        <span data-key="feature7">Work Permits</span>
+                        <span data-key="feature8">Business Immigration</span>
+                        <span data-key="feature9">Compliance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="contact_title">Get In Touch</h2>
+                <div class="section-subtitle" data-key="contact_subtitle">Schedule Your Consultation</div>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-key="contact_phone">Phone</h4>
+                            <p>+44 73 5055 3612</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-key="contact_telegram">Telegram</h4>
+                            <p>@arnofrance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-key="contact_email">Email</h4>
+                            <p>contact@valdemararno.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-key="contact_location">Location</h4>
+                            <p>Dublin, Ireland</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://t.me/arnofrance" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo" data-key="logo">Valdem'ar <span>Arno</span></div>
+                    <p data-key="footer_text">International Lawyer specializing in Irish and EU Law</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <p>+44 73 5055 3612</p>
+                    <p>@arnofrance</p>
+                    <p>Dublin, Ireland</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-key="footer_copyright">&copy; 2025 Valdem'ar Arno. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

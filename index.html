@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valdem'ar Arno | International Lawyer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="language-page">
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <canvas id="particlesCanvas"></canvas>
+    </div>
+
+    <!-- Main Content -->
+    <div class="language-container">
+        <!-- Animated Logo -->
+        <div class="logo-section">
+            <div class="logo-main">
+                <div class="logo-letter v">V</div>
+                <div class="logo-letter a">A</div>
+            </div>
+            <div class="logo-text">
+                <h1 class="logo-name">Valdem'ar</h1>
+                <h1 class="logo-surname">Arno</h1>
+            </div>
+        </div>
+
+        <!-- Profession Badge -->
+        <div class="profession-glitch">
+            <span class="glitch-text" data-text="International Lawyer">International Lawyer</span>
+            <div class="glitch-lines"></div>
+        </div>
+
+        <!-- Language Selection -->
+        <div class="selection-section">
+            <div class="selection-header">
+                <h2 class="selection-title">Select Language</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="language-grid">
+                <div class="lang-card" data-lang="en">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="flag">🇺🇸</div>
+                            <span class="lang-name">English</span>
+                        </div>
+                        <div class="card-back">
+                            <i class="fas fa-check"></i>
+                            <span>Selected</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="lang-card" data-lang="ru">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="flag">🇷🇺</div>
+                            <span class="lang-name">Русский</span>
+                        </div>
+                        <div class="card-back">
+                            <i class="fas fa-check"></i>
+                            <span>Выбрано</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="lang-card" data-lang="ua">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="flag">🇺🇦</div>
+                            <span class="lang-name">Українська</span>
+                        </div>
+                        <div class="card-back">
+                            <i class="fas fa-check"></i>
+                            <span>Обрано</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="lang-card" data-lang="ga">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="flag">🇮🇪</div>
+                            <span class="lang-name">Gaeilge</span>
+                        </div>
+                        <div class="card-back">
+                            <i class="fas fa-check"></i>
+                            <span>Roghnaithe</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location Badge -->
+        <div class="location-badge">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Based in Dublin, Ireland</span>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="transition-content">
+            <div class="loading-spinner"></div>
+            <span>Loading Experience</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
